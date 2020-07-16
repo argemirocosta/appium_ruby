@@ -48,11 +48,15 @@ Então('eu toco no ícone de adicionar favoritos') do
 end
 
 Então('eu toco em Conversões Favoritas') do
-  text("Favorites conversions").click
+  text("Favorite conversions").click
 end
 
 Então('eu verifico {string} foi adicionado a lista de conversões favoritas') do |unit_type|
-  text(unit_type)
+  item_text = find_element(id: "favorites_item_hint").text
+  if unit_type != item_text
+    fail("Não encontrou #{unit_type} na lista de favoritos!")
+  end
+
 end
 
 Então('eu toco no ícone de busca') do

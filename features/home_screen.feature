@@ -9,7 +9,6 @@
       Então a unidade selecionada da esquerda deve ser "Pé"
       E a unidade seleconada da direita deve ser "Centímetro"
 
-    @wip
     Cenário: Botão Show all deve estar ativado na tela
       Dados que estou na tela inicial
       Então o botão Show all deve ficar "desativado"
@@ -29,12 +28,13 @@
         |9     |274.32 |
         |10    |304.8  |
 
+    @wip
       Cenário: Usuário pode adicionar a conversão atual na lista de favoritos
         Dado que estou na tela inicial
         Então eu toco no ícone de adicionar favoritos
         Quando eu toco no ícone do menu
         Então eu toco em Conversões Favoritas
-        E eu verifico "Lenght" foi adicionado a lista de conversões favoritas
+        E eu verifico "Length" foi adicionado a lista de conversões favoritas
 
       Cenário: Usuário pode buscar um tipo de conversão existente
         Dado que estou na tela inicial

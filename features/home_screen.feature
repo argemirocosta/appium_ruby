@@ -6,7 +6,7 @@ Funcionalidade: Testar as funcionalidades da página principal
   Contexto:
     Dado que estou na tela inicial
 
-  @default
+  @smoke
   Cenário: Valores padrão na tela inicial são Pés e Centímetros
     Então a unidade selecionada da esquerda deve ser "Foot"
     E a unidade seleconada da direita deve ser "Centimeter"
@@ -16,7 +16,7 @@ Funcionalidade: Testar as funcionalidades da página principal
     Quando eu digito "1" no teclado da aplicação
     Então o botão Show all deve ficar "ativado"
 
-  @conversions
+  @smoke
   Esquema do Cenario: Verificar a conversão default
     Quando eu digito "<target>" no teclado da aplicação
     Então eu devo ver o resultado "<result>" !
@@ -28,6 +28,7 @@ Funcionalidade: Testar as funcionalidades da página principal
       | 9      | 274.32 |
       | 10     | 304.8  |
 
+  @smoke
   Cenário: Usuário pode adicionar a conversão atual na lista de favoritos
     Então eu toco no ícone de adicionar favoritos
     Quando eu toco no ícone do menu
@@ -42,6 +43,7 @@ Funcionalidade: Testar as funcionalidades da página principal
     Então a unidade selecionada da esquerda deve ser "Celsius"
     E a unidade seleconada da direita deve ser "Fahrenheit"
 
+  @smoke
   Esquema do Cenário: Usuário pode selecionar valores para as unidades escolhidas
     Então eu seleciono "<unidade>" para a unidade escolhida na esquerda
     Quando eu digito "<valor_inicio>" no teclado da aplicação
@@ -51,6 +53,7 @@ Funcionalidade: Testar as funcionalidades da página principal
       | Inch    | 1            | 2.54      |
       | Link    | 1            | 20.1168   |
 
+  @smoke
   Cenário: Usuário pode converter valores
     Quando eu toco no ícone do menu
     Então eu seleciono o menu "Volume"
@@ -58,7 +61,6 @@ Funcionalidade: Testar as funcionalidades da página principal
     Quando eu digito "1" no teclado da aplicação
     Então eu devo ver o resultado "15.1416" !
 
-  @wip
   Cenário: Usuário pode trocar valores
     Então a unidade selecionada da esquerda deve ser "Foot"
     E a unidade seleconada da direita deve ser "Centimeter"

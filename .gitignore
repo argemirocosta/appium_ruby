@@ -26,6 +26,7 @@ build/
 build-iPhoneOS/
 build-iPhoneSimulator/
 *.json
+*.html
 
 ## Specific to RubyMotion (use of CocoaPods):
 #

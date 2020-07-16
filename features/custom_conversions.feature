@@ -1,5 +1,6 @@
 #language: pt
 
+  @custom_conversions
   Funcionalidade: Usuário pode criar e gerenciar as conversões customizadas
 
     Cenário: Uário pode criar uma nova conversão

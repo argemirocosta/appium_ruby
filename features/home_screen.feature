@@ -15,17 +15,18 @@
       Quando eu tocar no botão de limpar
       Então deve mostrar todos os botões "desativados"
 
-    @conversions
+    @conversions @wip
     Esquema do Cenario: Verificar a conversão default
       Dado que estou na tela inicial
       Quando eu digito "<target>" na caixa de texto
       Então eu devo ver o resultado "<result>" !
       Exemplos:
         |target|result|
-        |1     |12    |
-        |2     |24    |
-        |3     |36    |
-        |9     |106   |
+        |1     |30.48  |
+        |2     |60.96  |
+        |3     |91.44  |
+        |9     |274.32 |
+        |10    |304.8  |
 
       Cenário: Usuário pode adicionar a conversão atual na lista de favoritos
         Dado que estou na tela inicial
@@ -34,7 +35,6 @@
         Então eu toco em Conversões Favoritas
         E eu verifico "Lenght" foi adicionado a lista de conversões favoritas
 
-        @wip
       Cenário: Usuário pode buscar um tipo de conversão existente
         Dado que estou na tela inicial
         Então eu toco no ícone de busca

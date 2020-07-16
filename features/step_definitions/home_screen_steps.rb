@@ -25,11 +25,20 @@ Então('deve mostrar todos os botões {string}') do |state|
 end
 
 Quando('eu digito {string} na caixa de texto') do |target|
-  log "caixa de texto com o valor #{target} "
+  digitos = target.split("")
+
+  digitos.each do |num|
+    find_element(id: "keypad").find_element(xpath: "//android.widget.Button[@text='#{num}']").click
+  end
+
 end
 
 Então('eu devo ver o resultado {string} !') do |result|
-  log "o resultado é #{result}"
+  value = find_element(id: "target_value").text
+
+  if value != result
+    fail("Expected unidade escolhida na direita é #{result}, mas o Actual é #{value}")
+  end
 end
 
 Então('eu toco no ícone de adicionar favoritos') do

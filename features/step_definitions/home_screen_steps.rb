@@ -77,12 +77,14 @@ end
 
 Então('eu seleciono {string} para a unidade escolhida na esquerda') do |value|
   find_elements(id: "select_unit_spinner")[0].click
+  procurar_na_lista_de_unidades(value)
+end
 
-  3.times{ Appium::TouchAction.new.swipe(start_x: 0.5, star_y: 0.2, end_x: 0.5, end_y: 0.8, duration: 600).perform }
-
-  until exists { text(value) } do
-    Appium::TouchAction.new.swipe(start_x: 0.5, star_y: 0.8, end_x: 0.5, end_y: 0.2, duration: 600).perform
-  end
-
+Então('eu seleciono o menu {string}') do |value|
   text(value).click
+end
+
+Então('eu seleciono {string} para a unidade da direita') do |value|
+  find_elements(id: "select_unit_spinner")[1].click
+  procurar_na_lista_de_unidades(value)
 end

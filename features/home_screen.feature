@@ -54,3 +54,12 @@
         |unidade  | valor_inicio | resultado |
         | Inch    |      1       |   2.54    |
         | Link    |      1       |  20.1168  |
+
+    @wip
+      Cenário: Usuário pode converter valores
+        Dado que estou na tela inicial
+        Quando eu toco no ícone do menu
+        Então eu seleciono o menu "Volume"
+        Então eu seleciono "Cup" para a unidade da direita
+        Quando eu digito "1" no teclado da aplicação
+        Então eu devo ver o resultado "15.1416" !

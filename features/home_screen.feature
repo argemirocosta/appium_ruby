@@ -45,8 +45,12 @@
         E a unidade seleconada da direita deve ser "Fahrenheit"
 
     @wip
-      Cenário: Usuário pode selecionar valores para as unidades escolhidas
+      Esquema do Cenário: Usuário pode selecionar valores para as unidades escolhidas
         Dado que estou na tela inicial
-        Então eu seleciono "Inch" para a unidade escolhida na esquerda
-        Quando eu digito "1" no teclado da aplicação
-        Então eu devo ver o resultado "2.54" !
+        Então eu seleciono "<unidade>" para a unidade escolhida na esquerda
+        Quando eu digito "<valor_inicio>" no teclado da aplicação
+        Então eu devo ver o resultado "<resultado>" !
+        Exemplos:
+        |unidade  | valor_inicio | resultado |
+        | Inch    |      1       |   2.54    |
+        | Link    |      1       |  20.1168  |

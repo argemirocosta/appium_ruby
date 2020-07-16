@@ -55,7 +55,6 @@
         | Inch    |      1       |   2.54    |
         | Link    |      1       |  20.1168  |
 
-    @wip
       Cenário: Usuário pode converter valores
         Dado que estou na tela inicial
         Quando eu toco no ícone do menu

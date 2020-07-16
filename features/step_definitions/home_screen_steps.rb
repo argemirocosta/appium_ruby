@@ -74,3 +74,8 @@ end
 Então('eu vejo {string} como a unidade atual para conversão') do |current_unit|
   find_element(id: "action_bar").find_element(xpath: "//android.widget.TextView[@text='#{current_unit}']")
 end
+
+Então('eu seleciono {string} para a unidade escolhida na esquerda') do |value|
+  find_elements(id: "select_unit_spinner")[0].click
+  text(value).click
+end

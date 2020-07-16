@@ -28,7 +28,6 @@
         |9     |274.32 |
         |10    |304.8  |
 
-    @wip
       Cenário: Usuário pode adicionar a conversão atual na lista de favoritos
         Dado que estou na tela inicial
         Então eu toco no ícone de adicionar favoritos
@@ -44,3 +43,10 @@
         Então eu vejo "Temperature" como a unidade atual para conversão
         Então a unidade selecionada da esquerda deve ser "Celsius"
         E a unidade seleconada da direita deve ser "Fahrenheit"
+
+    @wip
+      Cenário: Usuário pode selecionar valores para as unidades escolhidas
+        Dado que estou na tela inicial
+        Então eu seleciono "Inch" para a unidade escolhida na esquerda
+        Quando eu digito "1" no teclado da aplicação
+        Então eu devo ver o resultado "2.54" !

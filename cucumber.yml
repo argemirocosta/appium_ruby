@@ -2,4 +2,4 @@ custom: -t @custom_conversions --format html --out reports/report.html --format 
 home: -t @home_screen --format html --out reports/report.html --format pretty
 main: -t @main_menu --format html --out reports/report.html --format pretty
 
-smoke: -t @smoke--format html --out reports/report.html --format pretty
+smoke: -t @smoke --format html --out reports/report.html --format pretty

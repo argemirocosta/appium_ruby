@@ -88,3 +88,7 @@ Então('eu seleciono {string} para a unidade da direita') do |value|
   find_elements(id: "select_unit_spinner")[1].click
   procurar_na_lista_de_unidades(value)
 end
+
+Quando('eu toco no botão de trocar as unidades') do
+  find_element(id: "img_switch").click
+end

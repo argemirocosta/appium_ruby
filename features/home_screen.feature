@@ -9,16 +9,17 @@
       Então a unidade selecionada da esquerda deve ser "Pé"
       E a unidade seleconada da direita deve ser "Centímetro"
 
-    Cenário: Mostrar todos os botões ativados na tela
+    @wip
+    Cenário: Botão Show all deve estar ativado na tela
       Dados que estou na tela inicial
-      Então deve mostrar todos os botões "ativados"
-      Quando eu tocar no botão de limpar
-      Então deve mostrar todos os botões "desativados"
+      Então o botão Show all deve ficar "desativado"
+      Quando eu digito "1" no teclado da aplicação
+      Então o botão Show all deve ficar "ativado"
 
-    @conversions @wip
+    @conversions
     Esquema do Cenario: Verificar a conversão default
       Dado que estou na tela inicial
-      Quando eu digito "<target>" na caixa de texto
+      Quando eu digito "<target>" no teclado da aplicação
       Então eu devo ver o resultado "<result>" !
       Exemplos:
         |target|result|

@@ -16,15 +16,17 @@ Então('a unidade seleconada da direita deve ser {string}') do |value|
   end
 end
 
-Quando('eu tocar no botão de limpar') do
-  log "Botão de limpar pressionado"
+Então('o botão Show all deve ficar {string}') do |state|
+  button_state = find_element(id: "btn_show_all").enabled?
+
+  if state == "ativado"
+      fail("Expected: ativado") if button_state != true
+  elsif state == "desativado"
+      fail("Expected: desativado") if button_state != false
+  end
 end
 
-Então('deve mostrar todos os botões {string}') do |state|
-  log "Botões #{state}"
-end
-
-Quando('eu digito {string} na caixa de texto') do |target|
+Quando('eu digito {string} no teclado da aplicação') do |target|
   digitos = target.split("")
 
   digitos.each do |num|

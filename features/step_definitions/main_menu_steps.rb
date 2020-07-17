@@ -7,7 +7,7 @@ Quando('eu toco no ícone do menu') do
   find_element(accessibility_id: "Open navigation drawer").click
 end
 
-Então('eu devo ver o o menu lateral esquerdo') do
+Então('eu devo ver o menu lateral esquerdo') do
   text("Unit Converter")
 end
 

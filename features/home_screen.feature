@@ -68,7 +68,6 @@ Funcionalidade: Testar as funcionalidades da página principal
     Então a unidade selecionada da esquerda deve ser "Centimeter"
     E a unidade seleconada da direita deve ser "Foot"
 
-  @wip
   Cenário: Usuário pode limpar o histórico de conversões
     Quando eu toco no ícone do menu
     Então eu seleciono o menu "History"

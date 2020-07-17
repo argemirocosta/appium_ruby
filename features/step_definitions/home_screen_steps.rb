@@ -92,3 +92,22 @@ end
 Quando('eu toco no botão de trocar as unidades') do
   find_element(id: "img_switch").click
 end
+
+Então('eu devo ver o texto {string}') do |value|
+  text(value)
+end
+
+Então('eu verifico que o {string} º resultado no histórico é {string}') do |index, text|
+  parent_element = find_element(id: "history_conversion_list")
+  array_of_elements = parent_element.find_elements(id: "history_single_line")
+  actual_text = array_of_elements[index.to_i - 1].find_element(id: "history_item_hint").text
+  if actual_text != text
+    fail("Expected é #{text} mas o atual é #{actual_text}")
+  end
+end
+
+Quando('eu toco em delete da {string} º linha do histórico') do |index|
+  parent_element = find_element(id: "history_conversion_list")
+  array_of_elements = parent_element.find_elements(id: "history_single_line")
+  array_of_elements[index.to_i - 1].find_element(id: "deleteIcon").click
+end

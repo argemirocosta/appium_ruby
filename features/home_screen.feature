@@ -43,14 +43,14 @@ Funcionalidade: Testar as funcionalidades da página principal
     Então a unidade selecionada da esquerda deve ser "Celsius"
     E a unidade seleconada da direita deve ser "Fahrenheit"
 
-  @smoke @wip
+  @smoke
   Esquema do Cenário: Usuário pode selecionar valores para as unidades escolhidas
     Então eu seleciono "<unidade>" para a unidade escolhida na esquerda
     Quando eu digito "<valor_inicio>" no teclado da aplicação
     Então eu devo ver o resultado "<resultado>" !
     Exemplos:
       | unidade | valor_inicio | resultado |
-      | Inch1    | 1            | 2.54      |
+      | Inch1   | 1            | 2.54      |
       | Link    | 1            | 20.1168   |
 
   @smoke
@@ -67,3 +67,18 @@ Funcionalidade: Testar as funcionalidades da página principal
     Quando eu toco no botão de trocar as unidades
     Então a unidade selecionada da esquerda deve ser "Centimeter"
     E a unidade seleconada da direita deve ser "Foot"
+
+  @wip
+  Cenário: Usuário pode limpar o histórico de conversões
+    Quando eu toco no ícone do menu
+    Então eu seleciono o menu "History"
+    Então eu vejo "History" como a unidade atual para conversão
+    Então eu devo ver o texto "No history right now"
+    Quando eu toco no ícone do menu
+    Então eu seleciono o menu "Length"
+    Quando eu digito "1" no teclado da aplicação
+    Quando eu toco no ícone do menu
+    Então eu seleciono o menu "History"
+    E eu verifico que o "1" º resultado no histórico é "Length"
+    Quando eu toco em delete da "1" º linha do histórico
+    Então eu devo ver o texto "No history right now"

@@ -43,17 +43,17 @@ Funcionalidade: Testar as funcionalidades da página principal
     Então a unidade selecionada da esquerda deve ser "Celsius"
     E a unidade seleconada da direita deve ser "Fahrenheit"
 
-  @smoke
+  @smoke @wip
   Esquema do Cenário: Usuário pode selecionar valores para as unidades escolhidas
     Então eu seleciono "<unidade>" para a unidade escolhida na esquerda
     Quando eu digito "<valor_inicio>" no teclado da aplicação
     Então eu devo ver o resultado "<resultado>" !
     Exemplos:
       | unidade | valor_inicio | resultado |
-      | Inch1   | 1            | 2.54      |
+      | Inch    | 1            | 2.54      |
       | Link    | 1            | 20.1168   |
 
-  @smoke
+  @smoke @wip
   Cenário: Usuário pode converter valores
     Quando eu toco no ícone do menu
     Então eu seleciono o menu "Volume"

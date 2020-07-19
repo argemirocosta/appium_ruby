@@ -35,6 +35,7 @@ Funcionalidade: Testar as funcionalidades da página principal
     Então eu toco em Conversões Favoritas
     E eu verifico "Length" foi adicionado a lista de conversões favoritas
 
+  @wip
   Cenário: Usuário pode buscar um tipo de conversão existente
     Então eu toco no ícone de busca
     Então eu digito "Temperature" no campo de busca
@@ -43,7 +44,7 @@ Funcionalidade: Testar as funcionalidades da página principal
     Então a unidade selecionada da esquerda deve ser "Celsius"
     E a unidade seleconada da direita deve ser "Fahrenheit"
 
-  @smoke @wip
+  @smoke
   Esquema do Cenário: Usuário pode selecionar valores para as unidades escolhidas
     Então eu seleciono "<unidade>" para a unidade escolhida na esquerda
     Quando eu digito "<valor_inicio>" no teclado da aplicação
@@ -53,7 +54,7 @@ Funcionalidade: Testar as funcionalidades da página principal
       | Inch    | 1            | 2.54      |
       | Link    | 1            | 20.1168   |
 
-  @smoke @wip
+  @smoke
   Cenário: Usuário pode converter valores
     Quando eu toco no ícone do menu
     Então eu seleciono o menu "Volume"

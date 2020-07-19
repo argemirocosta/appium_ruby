@@ -60,7 +60,14 @@ Então('eu verifico {string} foi adicionado a lista de conversões favoritas') d
 end
 
 Então('eu toco no ícone de busca') do
-  find_element(id: "action_search").click
+  #find_element(id: "action_search").click
+
+  element = find_element(id: "action_search")
+  location = element.location
+
+  x = location[:x]
+  y = location[:y]
+  Appium::TouchAction.new.tap(x:x, y:y).perform
 end
 
 Então('eu digito {string} no campo de busca') do |text|

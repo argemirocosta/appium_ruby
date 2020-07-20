@@ -35,7 +35,6 @@ Funcionalidade: Testar as funcionalidades da página principal
     Então eu toco em Conversões Favoritas
     E eu verifico "Length" foi adicionado a lista de conversões favoritas
 
-  @wip
   Cenário: Usuário pode buscar um tipo de conversão existente
     Então eu toco no ícone de busca
     Então eu digito "Temperature" no campo de busca

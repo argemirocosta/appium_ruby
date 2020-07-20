@@ -3,7 +3,6 @@
 @gestures
 Funcionalidade: Usuário pode usar gestos
 
-  @wip
   Cenário: Usuário pode deslizar o menu da esquerda
     Dado que estou na tela inicial
     Quando eu deslizo da esquerda para a direita

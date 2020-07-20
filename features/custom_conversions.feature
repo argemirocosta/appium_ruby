@@ -3,7 +3,7 @@
   @custom_conversions
   Funcionalidade: Usuário pode criar e gerenciar as conversões customizadas
 
-    Cenário: Uário pode criar uma nova conversão
+    Cenário: Usuário pode criar uma nova conversão
       Dado que estou na tela inicial
       Então eu toco no ícone do menu
       Então eu toco no botão de Minhas conversões

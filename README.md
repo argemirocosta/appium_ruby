@@ -1,4 +1,4 @@
-# Homefashion
+# Appium Ruby
 
 Tests for Unit Converter app.
 
